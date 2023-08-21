@@ -53,7 +53,7 @@
     </script>
   </head>
   <body>
-    <button onclick="Draw()" id="button">Draw</button>
+    <button onclick="if(export_base) setTimeout(()=>startRecording(), initialDelay);Draw()" id="button">Draw</button>
     <div style="font-family: courier;position:absolute; z-index:-100">a</div>
     <canvas id="c"></canvas>
   </body>
