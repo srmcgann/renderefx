@@ -45,6 +45,7 @@
         top:50%;
         transform: translate(-50%,-50%);
         font-size: 24px;
+        z-index:1000;
       }
     </style>
     <script>
@@ -328,7 +329,7 @@
             tc.height = c.height
             tcx = tc.getContext('2d')
           }
-          if(type=='vid') src[1].defaultPlaybackRate = playbackSpeed
+          if(type=='vid') src[1].defaultPlaybackRate = src[1].playbackRate = playbackSpeed
           src[1].src=url
         }
       
